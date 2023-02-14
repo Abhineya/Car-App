@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 Container services() {
   return Container(
-    height: 600.0,
+    height: 450.0,
     // width: double.infinity,
     child: Column(
       children: [
@@ -26,7 +26,7 @@ Container services() {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
+          padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 0.0),
           child: Row(
             children: [
               item('FastTag Recharge'),
@@ -46,7 +46,7 @@ Container services() {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
+          padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 0.0),
           child: Row(
             children: [
               item('FastTag Recharge'),
@@ -66,7 +66,7 @@ Container services() {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.fromLTRB(20.0, 20.0, 20.0, 0.0),
+          padding: const EdgeInsets.fromLTRB(20.0, 0.0, 20.0, 0.0),
           child: Row(
             children: [
               item('FastTag Recharge'),
@@ -88,7 +88,7 @@ Container item(
       children: [
         Container(
           height: 80.0,
-          width: 80.0,
+          width: 60.0,
           child: Column(
             children: [
               Image(image: AssetImage('assets/images/fasttag.png')),

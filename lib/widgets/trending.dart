@@ -5,10 +5,24 @@ Container trending() {
   return Container(
     child: Column(
       children: [
-        Text('Trending Now'),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0.0, 0, 10.0),
+              child: Text(
+                'Trending now',
+                style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ],
+        ),
         Row(
           children: [
-            explorecard(),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(10.0, 0, 0, 0),
+              child: trendingcard(),
+            ),
             Column(
               children: [
                 Container(
@@ -56,6 +70,20 @@ Container trending() {
           ],
         ),
       ],
+    ),
+  );
+}
+
+Container trendingcard() {
+  return Container(
+    height: 200,
+    width: 150,
+    child: ClipRRect(
+      borderRadius: BorderRadius.circular(20.0),
+      child: Image(
+        image: AssetImage("assets/images/drive.png"),
+        fit: BoxFit.fill,
+      ),
     ),
   );
 }

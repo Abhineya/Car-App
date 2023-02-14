@@ -4,25 +4,39 @@ Container explore() {
   return Container(
     child: Column(
       children: [
-        Text('Explore'),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20.0, 0.0, 0, 10.0),
+              child: Text(
+                'Explore',
+                style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ],
+        ),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              explorecard(),
-              SizedBox(
-                width: 10.0,
-              ),
-              explorecard(),
-              SizedBox(
-                width: 10.0,
-              ),
-              explorecard(),
-              SizedBox(
-                width: 10.0,
-              ),
-              explorecard()
-            ],
+          child: Padding(
+            padding: const EdgeInsets.fromLTRB(10.0, 0, 0, 0),
+            child: Row(
+              children: [
+                explorecard(),
+                SizedBox(
+                  width: 10.0,
+                ),
+                explorecard(),
+                SizedBox(
+                  width: 10.0,
+                ),
+                explorecard(),
+                SizedBox(
+                  width: 10.0,
+                ),
+                explorecard()
+              ],
+            ),
           ),
         )
       ],
